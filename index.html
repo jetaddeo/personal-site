@@ -3,193 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Emma & Noah | Wedding Celebration</title>
+    <title>Jack & Catherine | Charleston Wedding</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">E + N</div>
-        <ul>
-          <li><a href="#story">Our Story</a></li>
-          <li><a href="#schedule">Weekend</a></li>
-          <li><a href="#travel">Travel</a></li>
-          <li><a href="#registry">Registry</a></li>
-          <li><a class="button" href="#rsvp">RSVP</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <p class="eyebrow">June 22, 2025 • Napa Valley, CA</p>
-        <h1>Emma & Noah</h1>
-        <p class="subtitle">We can’t wait to celebrate our wedding weekend with you.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#rsvp">RSVP by May 1</a>
-          <a class="button secondary" href="#schedule">View Schedule</a>
-        </div>
-      </div>
-    </header>
+  <body class="bg-[#f7f2e9] text-[#1f2d24]">
+    <nav aria-label="Section navigation" class="side-nav">
+      <button class="side-nav__dot" data-target="hero" aria-label="Hero"></button>
+      <button class="side-nav__dot" data-target="story" aria-label="Our story"></button>
+      <button class="side-nav__dot" data-target="schedule" aria-label="Schedule"></button>
+      <button class="side-nav__dot" data-target="registry" aria-label="Registry"></button>
+    </nav>
 
-    <main>
-      <section id="story" class="section">
-        <div class="section-heading">
-          <h2>Our Story</h2>
-          <p>
-            From coffee dates to cross-country adventures, we’ve built a life filled with laughter,
-            late-night talks, and spontaneous dance parties. We’re so grateful to share this next
-            chapter with you.
+    <main class="font-[\"Source Sans 3\",sans-serif]">
+      <section
+        id="hero"
+        data-section
+        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
+      >
+        <div class="max-w-3xl space-y-6">
+          <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Charleston, SC</p>
+          <h1 class="text-5xl md:text-6xl font-[\"Playfair Display\",serif] reveal">
+            Jack & Catherine
+          </h1>
+          <p class="text-lg md:text-xl text-[#2f3f35] reveal">
+            A heritage celebration in the lowcountry. Join us for a weekend of timeless design,
+            gracious hospitality, and joyful memories.
           </p>
+          <div class="flex flex-wrap gap-4 reveal">
+            <a
+              class="inline-flex items-center border border-[#1f2d24] px-6 py-3 uppercase text-xs tracking-[0.3em]"
+              href="#story"
+              >Our Story</a
+            >
+            <a
+              class="inline-flex items-center bg-[#1f2d24] text-[#f7f2e9] px-6 py-3 uppercase text-xs tracking-[0.3em]"
+              href="#schedule"
+              >View Schedule</a
+            >
+          </div>
         </div>
-        <div class="story-grid">
-          <div class="story-card">
-            <h3>How We Met</h3>
-            <p>
-              A mutual friend introduced us at a neighborhood brunch in 2018. By the time the check
-              arrived, we were already planning our next adventure.
+      </section>
+
+      <section
+        id="story"
+        data-section
+        class="min-h-screen flex items-center bg-[#efe7da] px-6 md:px-16 lg:px-24"
+      >
+        <div class="max-w-5xl grid gap-10 md:grid-cols-[1.2fr_1fr] items-center">
+          <div class="space-y-6">
+            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Our Story</p>
+            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+              A modern romance with Southern roots.
+            </h2>
+            <p class="text-base md:text-lg text-[#2f3f35] reveal">
+              Jack met Catherine during a design lecture in 2019. From seaside walks on Sullivan’s
+              Island to evenings restoring historic facades, they’ve built a life grounded in
+              craft, family, and beauty.
             </p>
           </div>
-          <div class="story-card">
-            <h3>The Proposal</h3>
-            <p>
-              On a foggy morning in Big Sur, Noah surprised Emma with a sunrise picnic and a ring
-              tucked into her favorite travel journal.
+          <div class="space-y-6">
+            <div class="border border-[#1f2d24] p-6 bg-[#f7f2e9] reveal">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-3">The Proposal</h3>
+              <p class="text-[#2f3f35]">
+                A private tour of Middleton Place ended with a candlelit veranda and a quiet yes.
+              </p>
+            </div>
+            <div class="border border-[#1f2d24] p-6 bg-[#f7f2e9] reveal">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-3">The Vision</h3>
+              <p class="text-[#2f3f35]">
+                Architectural lines, heirloom details, and a palette of cream and deep green.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="schedule"
+        data-section
+        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
+      >
+        <div class="max-w-6xl space-y-10">
+          <div class="space-y-4">
+            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Weekend Schedule</p>
+            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+              A curated Charleston itinerary.
+            </h2>
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Friday</h3>
+              <ul class="space-y-2 text-[#2f3f35]">
+                <li>5:30 PM — Welcome cocktails at The Dewberry</li>
+                <li>7:00 PM — Harbor dinner cruise</li>
+              </ul>
+            </article>
+            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Saturday</h3>
+              <ul class="space-y-2 text-[#2f3f35]">
+                <li>4:00 PM — Ceremony at The Governor Thomas Bennett House</li>
+                <li>5:30 PM — Garden cocktail hour</li>
+                <li>7:00 PM — Reception in the courtyard</li>
+              </ul>
+            </article>
+            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Sunday</h3>
+              <ul class="space-y-2 text-[#2f3f35]">
+                <li>10:00 AM — Farewell brunch at 167 Raw</li>
+                <li>12:00 PM — Departures</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="registry"
+        data-section
+        class="min-h-screen flex items-center bg-[#efe7da] px-6 md:px-16 lg:px-24"
+      >
+        <div class="max-w-5xl space-y-10">
+          <div class="space-y-4">
+            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Registry</p>
+            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+              Thoughtful gifts, timeless keepsakes.
+            </h2>
+            <p class="text-[#2f3f35] reveal">
+              Your presence is our favorite gift. If you’d like to contribute, we’ve curated a few
+              collections and a honeymoon fund.
             </p>
           </div>
-          <div class="story-card">
-            <h3>Looking Ahead</h3>
-            <p>
-              We’re thrilled to celebrate with family and friends in Napa and can’t wait to dance the
-              night away together.
-            </p>
+          <div class="grid gap-6 md:grid-cols-3">
+            <a class="registry-card reveal" href="#">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Heirloom Home</h3>
+              <p class="text-[#2f3f35]">Classic linens & tableware</p>
+            </a>
+            <a class="registry-card reveal" href="#">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Charleston Fund</h3>
+              <p class="text-[#2f3f35]">A lowcountry getaway</p>
+            </a>
+            <a class="registry-card reveal" href="#">
+              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Garden Registry</h3>
+              <p class="text-[#2f3f35]">Outdoor living pieces</p>
+            </a>
           </div>
         </div>
-      </section>
-
-      <section id="schedule" class="section alt">
-        <div class="section-heading">
-          <h2>Weekend Schedule</h2>
-          <p>Join us for a full weekend of wedding festivities. Formal invitations to follow.</p>
-        </div>
-        <div class="schedule-grid">
-          <article>
-            <h3>Friday, June 21</h3>
-            <ul>
-              <li>5:00 PM — Welcome drinks at Solstice Winery</li>
-              <li>7:00 PM — Casual dinner + lawn games</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Saturday, June 22</h3>
-            <ul>
-              <li>3:30 PM — Ceremony in the Garden</li>
-              <li>5:00 PM — Cocktail hour on the Terrace</li>
-              <li>6:30 PM — Dinner & dancing in the Barn</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Sunday, June 23</h3>
-            <ul>
-              <li>9:00 AM — Farewell brunch at Auberge</li>
-              <li>11:00 AM — Hugs & departures</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="travel" class="section">
-        <div class="section-heading">
-          <h2>Travel & Stay</h2>
-          <p>
-            We’ve reserved room blocks at the hotels below. Use the code <strong>EMMANOAH</strong>
-            when booking. Shuttles will run from both properties to the venue.
-          </p>
-        </div>
-        <div class="travel-grid">
-          <div class="travel-card">
-            <h3>Riverbend Hotel</h3>
-            <p>320 Vine Street, Napa, CA</p>
-            <p class="note">$289/night • 10 min to venue</p>
-            <a href="#" class="link">Book a room</a>
-          </div>
-          <div class="travel-card">
-            <h3>Olive Grove Inn</h3>
-            <p>88 Valley Road, Yountville, CA</p>
-            <p class="note">$245/night • 15 min to venue</p>
-            <a href="#" class="link">Book a room</a>
-          </div>
-          <div class="travel-card">
-            <h3>Transportation</h3>
-            <p>Shuttles depart every 30 minutes starting at 2:15 PM.</p>
-            <p class="note">Uber/Lyft available, but limited late-night.</p>
-            <a href="#" class="link">View shuttle map</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="registry" class="section alt">
-        <div class="section-heading">
-          <h2>Registry</h2>
-          <p>
-            Your presence is the best gift, but if you’d like to contribute, we’ve created a few
-            registries and a honeymoon fund.
-          </p>
-        </div>
-        <div class="registry-grid">
-          <a class="registry-card" href="#">
-            <h3>Crate & Barrel</h3>
-            <p>Home essentials</p>
-          </a>
-          <a class="registry-card" href="#">
-            <h3>Williams Sonoma</h3>
-            <p>Kitchen favorites</p>
-          </a>
-          <a class="registry-card" href="#">
-            <h3>Honeymoon Fund</h3>
-            <p>Italy getaway</p>
-          </a>
-        </div>
-      </section>
-
-      <section id="rsvp" class="section">
-        <div class="section-heading">
-          <h2>RSVP</h2>
-          <p>Please respond by May 1, 2025. We can’t wait to celebrate with you.</p>
-        </div>
-        <form class="rsvp-form">
-          <label>
-            Full name
-            <input type="text" placeholder="Jamie Lee" />
-          </label>
-          <label>
-            Email address
-            <input type="email" placeholder="jamie@email.com" />
-          </label>
-          <label>
-            Number of guests
-            <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </label>
-          <label>
-            Dietary notes
-            <input type="text" placeholder="Vegetarian, allergies, etc." />
-          </label>
-          <button type="submit" class="button primary">Send RSVP</button>
-        </form>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>With love, Emma & Noah</p>
-      <p class="note">Questions? Email <a href="mailto:hello@emmaandnoah.com">hello@emmaandnoah.com</a></p>
-    </footer>
+    <script>
+      const sectionButtons = document.querySelectorAll(".side-nav__dot");
+      const sections = document.querySelectorAll("[data-section]");
+      const revealItems = document.querySelectorAll(".reveal");
+
+      sectionButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = document.getElementById(button.dataset.target);
+          target?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              sectionButtons.forEach((button) => {
+                button.classList.toggle("is-active", button.dataset.target === id);
+              });
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      sections.forEach((section) => sectionObserver.observe(section));
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealItems.forEach((item) => revealObserver.observe(item));
+    </script>
   </body>
 </html>
