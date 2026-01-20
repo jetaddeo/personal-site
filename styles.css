@@ -35,10 +35,25 @@ body {
   transform: scale(1.2);
 }
 
+.fab-rsvp {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: #1f2d24;
+  color: #f7f2e9;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  z-index: 11;
+  box-shadow: 0 16px 30px rgba(31, 45, 36, 0.35);
+}
+
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal.is-visible {
@@ -61,5 +76,10 @@ body {
 @media (max-width: 768px) {
   .side-nav {
     right: 16px;
+  }
+
+  .fab-rsvp {
+    right: 16px;
+    bottom: 20px;
   }
 }

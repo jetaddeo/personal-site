@@ -16,71 +16,48 @@
   <body class="bg-[#f7f2e9] text-[#1f2d24]">
     <nav aria-label="Section navigation" class="side-nav">
       <button class="side-nav__dot" data-target="hero" aria-label="Hero"></button>
-      <button class="side-nav__dot" data-target="story" aria-label="Our story"></button>
       <button class="side-nav__dot" data-target="schedule" aria-label="Schedule"></button>
       <button class="side-nav__dot" data-target="registry" aria-label="Registry"></button>
     </nav>
+
+    <a
+      class="fab-rsvp"
+      href="#rsvp"
+      aria-label="RSVP"
+      >RSVP</a
+    >
 
     <main class="font-[\"Source Sans 3\",sans-serif]">
       <section
         id="hero"
         data-section
-        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
+        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=80');"
       >
-        <div class="max-w-3xl space-y-6">
-          <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Charleston, SC</p>
-          <h1 class="text-5xl md:text-6xl font-[\"Playfair Display\",serif] reveal">
-            Jack & Catherine
-          </h1>
-          <p class="text-lg md:text-xl text-[#2f3f35] reveal">
-            A heritage celebration in the lowcountry. Join us for a weekend of timeless design,
-            gracious hospitality, and joyful memories.
-          </p>
-          <div class="flex flex-wrap gap-4 reveal">
+        <div class="max-w-3xl space-y-6 reveal">
+          <div
+            class="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-12 shadow-2xl space-y-6"
+          >
+            <p class="tracking-[0.3em] uppercase text-xs text-[#e7ddcf]">December 5 • Charleston, SC</p>
+            <h1 class="text-5xl md:text-6xl font-[\"Playfair Display\",serif] text-[#f7f2e9]">
+              Jack & Catherine
+            </h1>
+            <p class="text-lg md:text-xl text-[#f7f2e9]">
+              A heritage celebration in the lowcountry. Join us for a weekend of timeless design,
+              gracious hospitality, and joyful memories.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-4">
             <a
-              class="inline-flex items-center border border-[#1f2d24] px-6 py-3 uppercase text-xs tracking-[0.3em]"
-              href="#story"
-              >Our Story</a
+              class="inline-flex items-center border border-[#f7f2e9] text-[#f7f2e9] px-6 py-3 uppercase text-xs tracking-[0.3em]"
+              href="#schedule"
+              >View Itinerary</a
             >
             <a
               class="inline-flex items-center bg-[#1f2d24] text-[#f7f2e9] px-6 py-3 uppercase text-xs tracking-[0.3em]"
-              href="#schedule"
-              >View Schedule</a
+              href="#registry"
+              >Registry</a
             >
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="story"
-        data-section
-        class="min-h-screen flex items-center bg-[#efe7da] px-6 md:px-16 lg:px-24"
-      >
-        <div class="max-w-5xl grid gap-10 md:grid-cols-[1.2fr_1fr] items-center">
-          <div class="space-y-6">
-            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Our Story</p>
-            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
-              A modern romance with Southern roots.
-            </h2>
-            <p class="text-base md:text-lg text-[#2f3f35] reveal">
-              Jack met Catherine during a design lecture in 2019. From seaside walks on Sullivan’s
-              Island to evenings restoring historic facades, they’ve built a life grounded in
-              craft, family, and beauty.
-            </p>
-          </div>
-          <div class="space-y-6">
-            <div class="border border-[#1f2d24] p-6 bg-[#f7f2e9] reveal">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-3">The Proposal</h3>
-              <p class="text-[#2f3f35]">
-                A private tour of Middleton Place ended with a candlelit veranda and a quiet yes.
-              </p>
-            </div>
-            <div class="border border-[#1f2d24] p-6 bg-[#f7f2e9] reveal">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-3">The Vision</h3>
-              <p class="text-[#2f3f35]">
-                Architectural lines, heirloom details, and a palette of cream and deep green.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -91,33 +68,24 @@
         class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
       >
         <div class="max-w-6xl space-y-10">
-          <div class="space-y-4">
-            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Weekend Schedule</p>
-            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+          <div class="space-y-4 reveal">
+            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50]">Itinerary</p>
+            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif]">
               A curated Charleston itinerary.
             </h2>
           </div>
-          <div class="grid gap-6 md:grid-cols-3">
+          <div class="grid gap-6 md:grid-cols-2">
             <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
               <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Friday</h3>
               <ul class="space-y-2 text-[#2f3f35]">
-                <li>5:30 PM — Welcome cocktails at The Dewberry</li>
-                <li>7:00 PM — Harbor dinner cruise</li>
+                <li>8:00 PM — Welcome Drinks @ Blind Tiger</li>
               </ul>
             </article>
             <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
               <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Saturday</h3>
               <ul class="space-y-2 text-[#2f3f35]">
-                <li>4:00 PM — Ceremony at The Governor Thomas Bennett House</li>
-                <li>5:30 PM — Garden cocktail hour</li>
-                <li>7:00 PM — Reception in the courtyard</li>
-              </ul>
-            </article>
-            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Sunday</h3>
-              <ul class="space-y-2 text-[#2f3f35]">
-                <li>10:00 AM — Farewell brunch at 167 Raw</li>
-                <li>12:00 PM — Departures</li>
+                <li>4:00 PM — Ceremony @ Saint Mary of the Annunciation</li>
+                <li>Reception to follow @ American Gardens</li>
               </ul>
             </article>
           </div>
@@ -130,12 +98,12 @@
         class="min-h-screen flex items-center bg-[#efe7da] px-6 md:px-16 lg:px-24"
       >
         <div class="max-w-5xl space-y-10">
-          <div class="space-y-4">
-            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">Registry</p>
-            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+          <div class="space-y-4 reveal">
+            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50]">Registry</p>
+            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif]">
               Thoughtful gifts, timeless keepsakes.
             </h2>
-            <p class="text-[#2f3f35] reveal">
+            <p class="text-[#2f3f35]">
               Your presence is our favorite gift. If you’d like to contribute, we’ve curated a few
               collections and a honeymoon fund.
             </p>
@@ -154,6 +122,22 @@
               <p class="text-[#2f3f35]">Outdoor living pieces</p>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="rsvp"
+        data-section
+        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
+      >
+        <div class="max-w-3xl space-y-6">
+          <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">RSVP</p>
+          <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
+            Kindly respond by October 15.
+          </h2>
+          <p class="text-[#2f3f35] reveal">
+            Formal invitations to follow. We cannot wait to celebrate with you in Charleston.
+          </p>
         </div>
       </section>
     </main>
