@@ -1,85 +1,155 @@
 :root {
   color-scheme: light;
+  --paper: #f6f2ea;
+  --ink: #2a2722;
+  --space-1: 12px;
+  --space-2: 24px;
+  --space-3: 48px;
+  --space-4: 72px;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "EB Garamond", "Garamond", "Baskerville", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  font-feature-settings: "onum";
+  text-rendering: optimizeLegibility;
 }
 
-.side-nav {
-  position: fixed;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: var(--space-4) 36px 96px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  z-index: 10;
+  gap: var(--space-4);
 }
 
-.side-nav__dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  border: 1px solid #1f2d24;
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0;
+}
+
+.meta {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.announcement {
+  text-align: center;
+  gap: var(--space-1);
+  padding: var(--space-3) 0;
+}
+
+.detail {
+  font-size: 1rem;
+}
+
+.engraving {
+  width: 65%;
+  max-width: 280px;
+  margin: 0;
+  filter: grayscale(100%) contrast(85%);
+  align-self: flex-start;
+  opacity: 0.85;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rsvp-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  color: inherit;
   background: transparent;
-  transition: transform 0.2s ease, background 0.2s ease;
+  border: 1px solid var(--ink);
+  padding: 8px 12px;
 }
 
-.side-nav__dot.is-active {
-  background: #1f2d24;
-  transform: scale(1.2);
+button {
+  align-self: flex-start;
+  padding: 8px 18px;
 }
 
-.fab-rsvp {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  background: #1f2d24;
-  color: #f7f2e9;
-  padding: 12px 28px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  z-index: 11;
-  box-shadow: 0 16px 30px rgba(31, 45, 36, 0.35);
+.note {
+  font-size: 0.95rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease, transform 1s ease;
+.registry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+.footer {
+  text-align: center;
+  padding-bottom: var(--space-4);
+  font-size: 0.95rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
 }
 
-.registry-card {
-  border: 1px solid #1f2d24;
-  padding: 24px;
-  background: #f7f2e9;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.registry-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(31, 45, 36, 0.18);
-}
-
-@media (max-width: 768px) {
-  .side-nav {
-    right: 16px;
+@media (max-width: 700px) {
+  .page {
+    padding: var(--space-3) 24px 72px;
   }
 
-  .fab-rsvp {
-    right: 16px;
-    bottom: 20px;
+  .announcement {
+    padding: var(--space-2) 0;
+  }
+
+  .engraving {
+    width: 75%;
+    max-width: 220px;
   }
 }
