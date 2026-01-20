@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.side-nav {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 10;
+}
+
+.side-nav__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid #1f2d24;
+  background: transparent;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.side-nav__dot.is-active {
+  background: #1f2d24;
+  transform: scale(1.2);
+}
+
+.fab-rsvp {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: #1f2d24;
+  color: #f7f2e9;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  z-index: 11;
+  box-shadow: 0 16px 30px rgba(31, 45, 36, 0.35);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.registry-card {
+  border: 1px solid #1f2d24;
+  padding: 24px;
+  background: #f7f2e9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(31, 45, 36, 0.18);
+}
+
+@media (max-width: 768px) {
+  .side-nav {
+    right: 16px;
+  }
+
+  .fab-rsvp {
+    right: 16px;
+    bottom: 20px;
+  }
+}
