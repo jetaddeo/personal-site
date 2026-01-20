@@ -3,186 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jack & Catherine | Charleston Wedding</title>
+    <title>Catherine & Jack | Charleston Wedding</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-[#f7f2e9] text-[#1f2d24]">
-    <nav aria-label="Section navigation" class="side-nav">
-      <button class="side-nav__dot" data-target="hero" aria-label="Hero"></button>
-      <button class="side-nav__dot" data-target="schedule" aria-label="Schedule"></button>
-      <button class="side-nav__dot" data-target="registry" aria-label="Registry"></button>
-    </nav>
-
-    <a
-      class="fab-rsvp"
-      href="#rsvp"
-      aria-label="RSVP"
-      >RSVP</a
-    >
-
-    <main class="font-[\"Source Sans 3\",sans-serif]">
-      <section
-        id="hero"
-        data-section
-        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24 bg-cover bg-center"
-        style="background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=80');"
-      >
-        <div class="max-w-3xl space-y-6 reveal">
-          <div
-            class="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-12 shadow-2xl space-y-6"
-          >
-            <p class="tracking-[0.3em] uppercase text-xs text-[#e7ddcf]">December 5 • Charleston, SC</p>
-            <h1 class="text-5xl md:text-6xl font-[\"Playfair Display\",serif] text-[#f7f2e9]">
-              Jack & Catherine
-            </h1>
-            <p class="text-lg md:text-xl text-[#f7f2e9]">
-              A heritage celebration in the lowcountry. Join us for a weekend of timeless design,
-              gracious hospitality, and joyful memories.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-4">
-            <a
-              class="inline-flex items-center border border-[#f7f2e9] text-[#f7f2e9] px-6 py-3 uppercase text-xs tracking-[0.3em]"
-              href="#schedule"
-              >View Itinerary</a
-            >
-            <a
-              class="inline-flex items-center bg-[#1f2d24] text-[#f7f2e9] px-6 py-3 uppercase text-xs tracking-[0.3em]"
-              href="#registry"
-              >Registry</a
-            >
-          </div>
-        </div>
+  <body>
+    <main class="page">
+      <img
+        class="hero"
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=700&q=70"
+        alt="Engraving-style botanical vignette"
+      />
+      <section class="announcement">
+        <p class="meta">Saturday, the Eighth of December, Two Thousand Twenty-Six</p>
+        <h1>Catherine Ginn & Jack Taddeo</h1>
+        <p class="meta">Charleston, South Carolina</p>
       </section>
 
-      <section
-        id="schedule"
-        data-section
-        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
-      >
-        <div class="max-w-6xl space-y-10">
-          <div class="space-y-4 reveal">
-            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50]">Itinerary</p>
-            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif]">
-              A curated Charleston itinerary.
-            </h2>
-          </div>
-          <div class="grid gap-6 md:grid-cols-2">
-            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Friday</h3>
-              <ul class="space-y-2 text-[#2f3f35]">
-                <li>8:00 PM — Welcome Drinks @ Blind Tiger</li>
-              </ul>
-            </article>
-            <article class="border border-[#1f2d24] p-6 bg-[#efe7da] reveal">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Saturday</h3>
-              <ul class="space-y-2 text-[#2f3f35]">
-                <li>4:00 PM — Ceremony @ Saint Mary of the Annunciation</li>
-                <li>Reception to follow @ American Gardens</li>
-              </ul>
-            </article>
-          </div>
-        </div>
+      <section class="invitation">
+        <h2>Invitation</h2>
+        <p>
+          Mr. and Mrs. James Ginn request the honor of your presence at the marriage of their
+          daughter Catherine Ginn to Jack Taddeo, son of Mr. and Mrs. Anthony Taddeo. The ceremony
+          will be held in Charleston, South Carolina, with reception to follow in the city.
+        </p>
       </section>
 
-      <section
-        id="registry"
-        data-section
-        class="min-h-screen flex items-center bg-[#efe7da] px-6 md:px-16 lg:px-24"
-      >
-        <div class="max-w-5xl space-y-10">
-          <div class="space-y-4 reveal">
-            <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50]">Registry</p>
-            <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif]">
-              Thoughtful gifts, timeless keepsakes.
-            </h2>
-            <p class="text-[#2f3f35]">
-              Your presence is our favorite gift. If you’d like to contribute, we’ve curated a few
-              collections and a honeymoon fund.
-            </p>
-          </div>
-          <div class="grid gap-6 md:grid-cols-3">
-            <a class="registry-card reveal" href="#">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Heirloom Home</h3>
-              <p class="text-[#2f3f35]">Classic linens & tableware</p>
-            </a>
-            <a class="registry-card reveal" href="#">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Charleston Fund</h3>
-              <p class="text-[#2f3f35]">A lowcountry getaway</p>
-            </a>
-            <a class="registry-card reveal" href="#">
-              <h3 class="font-[\"Playfair Display\",serif] text-2xl mb-2">Garden Registry</h3>
-              <p class="text-[#2f3f35]">Outdoor living pieces</p>
-            </a>
-          </div>
-        </div>
+      <section class="ceremony">
+        <h2>Ceremony</h2>
+        <img
+          class="engraving"
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=70"
+          alt="Engraving-style view of a historic church"
+        />
+        <p class="detail">Saint Mary of the Annunciation</p>
+        <p class="detail">Four o'clock in the afternoon</p>
+        <p class="detail">89 Hasell Street, Charleston, South Carolina</p>
       </section>
 
-      <section
-        id="rsvp"
-        data-section
-        class="min-h-screen flex items-center bg-[#f7f2e9] px-6 md:px-16 lg:px-24"
-      >
-        <div class="max-w-3xl space-y-6">
-          <p class="tracking-[0.3em] uppercase text-xs text-[#4a5d50] reveal">RSVP</p>
-          <h2 class="text-4xl md:text-5xl font-[\"Playfair Display\",serif] reveal">
-            Kindly respond by October 15.
-          </h2>
-          <p class="text-[#2f3f35] reveal">
-            Formal invitations to follow. We cannot wait to celebrate with you in Charleston.
-          </p>
-        </div>
+      <section class="reception">
+        <h2>Reception</h2>
+        <img
+          class="engraving"
+          src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?auto=format&fit=crop&w=600&q=70"
+          alt="Engraving-style view of a garden house"
+        />
+        <p class="detail">American Gardens</p>
+        <p class="detail">Immediately following the ceremony</p>
+        <p class="detail">24 Legare Street, Charleston, South Carolina</p>
+      </section>
+
+      <section class="travel">
+        <h2>Travel</h2>
+        <p class="detail">The Dewberry Charleston</p>
+        <p class="detail">334 Meeting Street, Charleston, South Carolina</p>
+        <p class="detail"><a href="https://www.thedewberrycharleston.com">thedewberrycharleston.com</a></p>
+      </section>
+
+      <section class="rsvp">
+        <h2>RSVP</h2>
+        <p class="detail">Please respond by the fifteenth of October.</p>
+        <form class="rsvp-form" aria-label="RSVP form">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            Attendance
+            <select name="attendance">
+              <option value="accepts">Accepts with pleasure</option>
+              <option value="declines">Declines with regret</option>
+            </select>
+          </label>
+          <button type="submit">Submit RSVP</button>
+        </form>
+        <p class="note">RSVP received.</p>
+      </section>
+
+      <section class="registry">
+        <h2>Registry</h2>
+        <p>
+          Your presence is requested with gratitude. For those who wish to mark the occasion with a
+          gift, registries are available at the addresses below.
+        </p>
+        <ul class="registry-list">
+          <li><a href="https://www.crateandbarrel.com">Crate &amp; Barrel</a></li>
+          <li><a href="https://www.williams-sonoma.com">Williams Sonoma</a></li>
+        </ul>
       </section>
     </main>
 
-    <script>
-      const sectionButtons = document.querySelectorAll(".side-nav__dot");
-      const sections = document.querySelectorAll("[data-section]");
-      const revealItems = document.querySelectorAll(".reveal");
-
-      sectionButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const target = document.getElementById(button.dataset.target);
-          target?.scrollIntoView({ behavior: "smooth" });
-        });
-      });
-
-      const sectionObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const id = entry.target.id;
-              sectionButtons.forEach((button) => {
-                button.classList.toggle("is-active", button.dataset.target === id);
-              });
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-
-      sections.forEach((section) => sectionObserver.observe(section));
-
-      const revealObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      revealItems.forEach((item) => revealObserver.observe(item));
-    </script>
+    <footer class="footer">Catherine Ginn & Jack Taddeo · 8 December 2026</footer>
   </body>
 </html>
