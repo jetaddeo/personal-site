@@ -54,7 +54,7 @@ h2 {
 
 h1 {
   font-size: 2.6rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
 }
 
 h2 {
@@ -76,12 +76,15 @@ p {
   padding: var(--space-3) 0;
 }
 
-.hero {
-  width: 70%;
-  max-width: 320px;
-  margin: 0 auto;
-  filter: grayscale(100%) contrast(85%);
-  opacity: 0.85;
+.ampersand {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  margin: var(--space-1) 0;
+}
+
+.meta-line {
+  display: block;
 }
 
 .detail {
@@ -158,11 +161,6 @@ button {
 
   .announcement {
     padding: var(--space-2) 0;
-  }
-
-  .hero {
-    width: 80%;
-    max-width: 240px;
   }
 
   .engraving {
