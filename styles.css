@@ -36,12 +36,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  text-align: center;
 }
 
 section {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  align-items: center;
 }
 
 h1,
@@ -70,9 +72,16 @@ p {
 }
 
 .announcement {
-  text-align: center;
   gap: var(--space-1);
   padding: var(--space-3) 0;
+}
+
+.hero {
+  width: 70%;
+  max-width: 320px;
+  margin: 0 auto;
+  filter: grayscale(100%) contrast(85%);
+  opacity: 0.85;
 }
 
 .detail {
@@ -84,7 +93,7 @@ p {
   max-width: 280px;
   margin: 0;
   filter: grayscale(100%) contrast(85%);
-  align-self: flex-start;
+  align-self: center;
   opacity: 0.85;
 }
 
@@ -92,6 +101,8 @@ p {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+  align-items: center;
+  width: min(420px, 100%);
 }
 
 .rsvp-form label {
@@ -109,10 +120,11 @@ button {
   background: transparent;
   border: 1px solid var(--ink);
   padding: 8px 12px;
+  width: 100%;
 }
 
 button {
-  align-self: flex-start;
+  width: auto;
   padding: 8px 18px;
 }
 
@@ -146,6 +158,11 @@ button {
 
   .announcement {
     padding: var(--space-2) 0;
+  }
+
+  .hero {
+    width: 80%;
+    max-width: 240px;
   }
 
   .engraving {
